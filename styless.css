@@ -1,0 +1,167 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-image: url('https://img.wallpapersafari.com/desktop/1600/900/94/51/U0rczZ.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+
+
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotateY(180deg);
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #007bff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+nav li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #ffeb3b;
+}
+
+nav li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #ffeb3b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav li:hover::before {
+  transform: scaleX(1);
+}
+
+/* Main styles */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.slider {
+  margin: 2rem 0;
+}
+
+.slider img {
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav li {
+    margin: 1rem 0;
+  }
+}
+``
